@@ -18,16 +18,50 @@ export const Sidebar = () => {
     },
     {
       icon: <CiHome size="24px" />,
-      title: "You",
+      title: "Home",
     },
+    {
+      icon: <SiYoutubeshorts size="24px" />,
+      title: "shorts",
+    },
+    {
+      icon: <MdOutlineSubscriptions size="24px" />,
+      title: "Subscription",
+    },
+    {
+      icon: <CiHome size="24px" />,
+      title: "Home",
+    },
+    {
+      icon: <SiYoutubeshorts size="24px" />,
+      title: "shorts",
+    },
+    {
+      icon: <MdOutlineSubscriptions size="24px" />,
+      title: "Subscription",
+    },
+    {
+      icon: <CiHome size="24px" />,
+      title: "Home",
+    },
+    {
+      icon: <SiYoutubeshorts size="24px" />,
+      title: "shorts",
+    },
+    {
+      icon: <MdOutlineSubscriptions size="24px" />,
+      title: "Subscription",
+    },
+
+   
   ];
   return (
-    <div className="px-4">
+    <div className=" left-0 w-auto p-5 h-[calc(100vh-5.625rem)] px-6 bg-white overflow-y-scroll overflow-x-hidden">
       {sidebarItems.map((item, index) => {
         return (
-          <div  key= {index} className="my-1 py-3  ">
+          <div  key= {index} className="my-1 py-3 flex  ">
             {item.icon}
-            <p>{item.title}</p>
+            <p className="ml-5">{item.title}</p>
           </div>
         );
       })}
