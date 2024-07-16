@@ -3,12 +3,18 @@ import { IoIosNotificationsOutline } from "react-icons/io";
 import { CiVideoOn } from "react-icons/ci";
 import Avatar from "react-avatar";
 import { CiSearch } from "react-icons/ci";
+import { useDispatch } from "react-redux";
+import { toggleSidebar } from "./utils/appSlice";
 const Navbar = () => {
+ const dispatch =useDispatch();
+  const handleToggele=()=>{
+   dispatch(toggleSidebar());
+  }
   return (
     <div className="flex fixed top-0 justify-center items-center w-[100%] z-10 bg-white">
     <div className="  flex  w-[96%] py-3 justify-between items-center">
       <div className="flex  items-center">
-        <GiHamburgerMenu />
+        <GiHamburgerMenu   onClick={handleToggele} className="cursor-pointer"/>
         <img className="px-4"
           width={"105px"}
           src="https://1000logos.net/wp-content/uploads/2017/05/Youtube-logo.jpg"
