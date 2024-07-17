@@ -23,7 +23,7 @@ const Navbar = () => {
       </div>
       <div className="flex  w-[40%]  items-center">
         <div  className="w-[100%] py-1 px-1  border border-gray-400 rounded-l-full">
-          <input type="text" placeholder="Search" className="border w-full outline-none  border-none" />
+          <input type="text" placeholder="Search" className="border w-full outline-none  border-none pl-3"  />
         </div>
         <button className="py-2 border border-gray-400 rounded-r-full    px-4"> <CiSearch /></button>
       </div>
