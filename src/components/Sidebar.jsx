@@ -56,7 +56,7 @@ export const Sidebar = () => {
   ];
  const open = useSelector((store)=>store.app.open);
   return (
-    <div className=" left-0 w-auto p-5 h-[calc(100vh-5.625rem)] px-6 bg-white overflow-y-scroll overflow-x-hidden">
+    <div className={`left-0  ${open? "w-[40%]" : "w-[15%]"} p-5 h-[calc(100vh-5.625rem)] px-6 bg-white overflow-y-scroll overflow-x-hidden`}>
       {sidebarItems.map((item, index) => {
         return (
           <div key={index} className="my-1 py-3 flex  ">
