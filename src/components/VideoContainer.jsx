@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { YOUTUBE_VIDEO_API } from '../constant/Youtube'
-import { APT_KEY } from '../constant/Youtube'
+
 import VideoCard from './VideoCard'
+import { Link } from "react-router-dom";
 
 const VideoContainer = () => {
   const [video ,setVideo] =useState([])
@@ -26,7 +27,9 @@ fetchVideos();
       {
         video.map((item)=>{
           return(
-            <VideoCard key={item.id} item ={item}/>
+            <Link to ={`/watch?v=${item.id}`}  key={item.id}>
+            <VideoCard  item ={item}/>
+            </Link>
           )
         })
       }
