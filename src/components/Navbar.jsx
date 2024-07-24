@@ -31,7 +31,7 @@ const Navbar = () => {
         <div className="flex items-center w-[12%]  justify-between">
           <CiVideoOn size={"24px"} />
           <IoIosNotificationsOutline size={"24px"} />
-          <Avatar src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZs_1DldfZUC9lOmMMI4USmKyQiKwyzoIyRQ&s" size={50} round="50px" />
+          <Avatar src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9M6zzKkWrAgNLHPqA9lya6ESyGPmGdfefNQ&s" size={50} round="50px" />
         </div>
       
     </div>
