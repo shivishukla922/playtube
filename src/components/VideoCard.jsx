@@ -13,7 +13,7 @@ const VideoCard = ({ item }) => {
         `https://youtube.googleapis.com/youtube/v3/channels?part=snippet%2CcontentDetails%2Cstatistics&id=${item.snippet.channelId}&key= ${APT_KEY} `
       );
       setytIcon(res.data.items[0].snippet.thumbnails.high.url);
-      console.log(res,'asd')
+     
     } catch (err) {
       console.log(err,'error')
     }
